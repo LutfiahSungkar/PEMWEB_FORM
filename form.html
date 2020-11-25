@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <title>Form</title>
+    </head>
+    <form method="POST" action="/projects/1">
+        <h1 align="center" style="background-color: rgb(189, 15, 15);">PENDAFTARAN TK MUTIARA</h1>
+        <fieldset style="background-color: rgb(79, 201, 100);" id="Data_Pribadi">
+            <legend>Data Pribadi</legend>
+            <ol>
+                 <li>
+                     <label for="name">Nama</label>
+                     <input type="text" name="nama" id="nama">
+                 </li>
+                 <br/>
+                 <li>
+                     <label for="birth">Tempat, Tanggal Lahir</label>
+                     <input type="date" name="Tempat_,Tanggal_Lahir" id="Tempat_,Tanggal_Lahir" value="2020-10-28">
+                 </li>
+                 <br/>
+                 <li>
+                     <label>Jenis Kelamin</label>
+                     <select for="Jenis_kelamin">
+                         <option value="">---pilih---</option>
+                         <option value="Laki_-_laki">Laki-laki</option>
+                         <option value="Perempuan">Perempuan</option>
+                    </select>
+                 </li>
+                 <br/>
+                 <li>
+                    <label>Agama</label>
+                    <select for="Agama">
+                        <option value="">---pilih---</option>
+                        <option value="Islam">Islam</option>
+                        <option value="Kristen">Kristen</option>
+                        <option value="Katolik">Katolik</option>
+                        <option value="Hindu">Hindu</option>
+                        <option value="Budha">Budha</option>
+                        <option value="Lain_-_lain">Lain-lain</option>
+                    </select>
+                 </li>
+                 <br/>
+                 <li>
+                     <label for="Warna_BajuOR">Warna Baju Olahraga</label>
+                     <input type="color" name="Warna_BajuOR" id="Warna_BajuOR">
+                 </li>
+                 <li>
+                     <div>
+                         <label>Alamat</label>
+                         <div>
+                             <textarea name="Alamat" rows="4" cols="30"></textarea>
+                         </div>
+                     </div>
+                 </li>
+            </ol>
+            <br/>
+        </fieldset>
+        <br/>
+        <fieldset style="background-color: rgb(79, 201, 100);" id="Kontak_Pribadi">
+            <legend>Kontak Wali Murid </legend>
+            <ol>
+                <li>
+                    <label for="No._Handphone">No. Handphone</label>
+                    <input type="tel" name="No._Handphone" id="No._Handphone">
+                </li>
+                <br/>
+                <li>
+                    <label for="Email">Email</label>
+                    <input type="email" name="Email" id="Email">
+                </li>
+            </ol>
+        </fieldset>
+        <br/>
+        <fieldset style="background-color: rgb(79, 201, 100);" id="Pendaftaran_Program">
+            <legend>Pendaftaran Program</legend>
+            <ol>
+                <li>
+                    <label>Program Pilihan</label><br/>
+                    <input type="checkbox" id="Program_Pilihan" name="Program_Pilihan" value="Bahasa_Inggris">
+                    <label for="Program_Pilihan">TK A</label><br>
+                    <input type="checkbox" id="Program_Pilihan" name="Program_Pilihan" value="Bahasa_Arab">
+                    <label for="Program_Pilihan">TK B</label><br>
+                </li>
+                <br/>
+                <li>
+                    <label>Ekstrakurikuler Pilihan</label><br/>
+                    <input type="radio" id="Menggambar" name="Level_Program" value="Menggambar">
+                    <label for="Menggambar">Menggambar</label><br/>
+                    <input type="radio" id="Menyanyi" name="Level_Pilihan" value="Menyanyi">
+                    <label for="Menyanyi">Menyanyi</label><br/>
+                    <input type="radio" id="Menari" name="Program_Pilihan" value="Menari">
+                    <label for="Menari">Menari</label><br/>
+                </li>
+            </ol>  
+        </fieldset>
+        <br/>
+        <input type="submit" value="submit">
+    </form>
+</html>
